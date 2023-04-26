@@ -3,6 +3,7 @@ package com.example.flixsterplus
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.codepath.asynchttpclient.AsyncHttpClient
@@ -11,7 +12,7 @@ import okhttp3.Headers
 import org.json.JSONException
 
 private const val TAG="MainActivity"
-private const val NOW_PLAYING="https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"
+private const val NOW_PLAYING="https://api.themoviedb.org/3/person/popular?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"
 class MainActivity : AppCompatActivity() {
 
     private val movies = mutableListOf<Movie>()
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         rvmovies=findViewById(R.id.rvMovies)
         val movieAdapter = MovieAdapter(this, movies)
         rvmovies.adapter=movieAdapter
-        rvmovies.layoutManager=LinearLayoutManager(this)
+        rvmovies.layoutManager=GridLayoutManager(this, 2)
 
         val client = AsyncHttpClient()
         client.get(NOW_PLAYING, object:JsonHttpResponseHandler(){
