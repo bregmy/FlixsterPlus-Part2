@@ -2,7 +2,7 @@
 
 Submitted by: **Bikesh Regmi**
 
-**FlixsterPlus Part 2** is a movie browsing app that allows users to browse ... [TODO] 
+**FlixsterPlus Part 2** is a movie browsing app that allows users to browse Trending People in Flim Industry and what are they Known for.
 
 Time spent: **20** hours spent in total
 
