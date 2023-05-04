@@ -11,7 +11,7 @@ Time spent: **20** hours spent in total
 The following **required** functionality is completed:
 
 - [X] **Choose any endpoint on The MovieDB API except `now_playing`**
-  - Chosen Endpoint: `[TODO: FILL ME IN TO GET CREDIT]`
+  - Chosen Endpoint: `["https://api.themoviedb.org/3/person/popular?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"]`
 - [X] **Make a request to your chosen endpoint and implement a RecyclerView to display all entries**
 - [X] **Use Glide to load and display at least one image per entry**
 - [X] **Click on an entry to view specific details about that entry using Intents**
